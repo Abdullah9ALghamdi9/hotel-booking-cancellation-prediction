@@ -32,10 +32,9 @@ The model was optimized using RandomizedSearchCV and cross-validation.
 
 ## Dataset
 
-Hotel Reservations Dataset
+Hotel Booking Demand Dataset
 
-Source: https://www.kaggle.com/datasets/ahsan81/hotel-reservations-classification-dataset?utm_source=chatgpt.com
-
+Source: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
 ## How to Run
 
 Install dependencies:
