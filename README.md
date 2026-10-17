@@ -32,9 +32,9 @@ The model was optimized using RandomizedSearchCV and cross-validation.
 
 ## Dataset
 
-Hotel Booking Demand Dataset
+Hotel Bookings Dataset
 
-Source: https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand
+Source: https://www.kaggle.com/datasets/garrettcannonweeks/hotel-bookings
 
 ## How to Run
 
