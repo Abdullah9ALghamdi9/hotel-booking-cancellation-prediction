@@ -8,8 +8,6 @@ A Machine Learning web application designed to help hotel staff predict booking 
 
 - Interactive dashboard
 - Hotel booking cancellation predictions
-- Cancellation probability and risk levels<img width="1440" height="900" alt="‏لقطة الشاشة ١٤٤٨-٠٥-٠٦ في ١٠ ٤٤ ٢٦ م" src="https://github.com/user-attachments/assets/4c688c86-f32c-4910-a653-96249dd059db" />
-
 - Guest booking information
 - FastAPI backend connected to a trained ML model
 
@@ -53,6 +51,8 @@ uvicorn main:app --reload
 ```
 
 Open http://127.0.0.1:8000/app
+
+ - Cancellation probability and risk levels<img width="1440" height="900" alt="‏لقطة الشاشة ١٤٤٨-٠٥-٠٦ في ١٠ ٤٤ ٢٦ م" src="https://github.com/user-attachments/assets/4c688c86-f32c-4910-a653-96249dd059db" />
 
 ## Note
 
