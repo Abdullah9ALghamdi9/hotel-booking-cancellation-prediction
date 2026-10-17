@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StaySense | Booking Intelligence</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">S</span><div><strong>StaySense</strong><small>BOOKING INTELLIGENCE</small></div></div>
+      <div class="side-heading">WORKSPACE</div>
+      <a class="nav active" href="#overview">◫ <span>Overview</span></a>
+      <a class="nav" href="#bookings">▤ <span>Bookings</span></a>
+      <div class="sidebar-bottom"><span class="live-dot"></span> Model service <span id="apiStatus">Checking...</span><p>Demo data • No database</p></div>
+    </aside>
+    <main id="overview" class="main">
+      <header class="topbar"><div><div class="eyebrow">HOTEL OPERATIONS / OVERVIEW</div><h1>Booking risk dashboard</h1><p>Monitor cancellation risk across guest reservations.</p></div><div class="top-right"><span class="date-label" id="today"></span><div class="avatar">HM</div></div></header>
+      <div class="stats">
+        <article class="stat"><div class="stat-label">Total bookings <span>▤</span></div><div id="total" class="stat-value">—</div><div class="stat-note">Sample reservations</div></article>
+        <article class="stat"><div class="stat-label">High risk <span class="red-text">●</span></div><div id="high" class="stat-value red-text">—</div><div class="stat-note">Cancellation probability ≥ 70%</div></article>
+        <article class="stat"><div class="stat-label">Medium risk <span class="orange-text">●</span></div><div id="medium" class="stat-value orange-text">—</div><div class="stat-note">Between 36% and 70%</div></article>
+        <article class="stat"><div class="stat-label">Low risk <span class="green-text">●</span></div><div id="low" class="stat-value green-text">—</div><div class="stat-note">Cancellation probability &lt; 36%</div></article>
+      </div>
+      <section class="panel" id="bookings">
+        <div class="panel-head"><div><h2>Guest reservations</h2><p>Select a guest to view their booking and prediction.</p></div><div class="tools"><input id="search" type="search" placeholder="Search guest or booking ID" /><button id="refresh" type="button">↻ Refresh predictions</button></div></div>
+        <div class="table-scroll"><table><thead><tr><th>GUEST</th><th>BOOKING ID</th><th>HOTEL</th><th>ARRIVAL</th><th>STAY</th><th>CANCELLATION RISK</th><th>STATUS</th><th></th></tr></thead><tbody id="bookingRows"></tbody></table></div>
+      </section>
+      <div class="bottom-grid">
+        <section class="panel detail"><div class="panel-head"><div><h2>Guest details</h2><p>Selected reservation information</p></div></div><div id="guestDetails" class="detail-body"><div class="muted">Select a booking above.</div></div></section>
+        <section class="panel prediction"><div class="panel-head"><div><h2>Cancellation prediction</h2><p>Calculated by your Gradient Boosting model</p></div></div><div id="predictionDetails" class="prediction-body"><div class="muted">Select a booking above.</div></div></section>
+      </div>
+      <footer>StaySense demo • Guest identities and bookings are fictional • Predictions are returned by your local model</footer>
+    </main>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
